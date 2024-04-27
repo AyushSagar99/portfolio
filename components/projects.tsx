@@ -16,7 +16,7 @@ export default function Projects() {
 //   },[inView,setActiveSection,timeOfLastClick])
 
   return (
-    <section id='projects' className='scroll-mt-28' ref={ref}>
+    <section id='projects' className='scroll-mt-28 mb-28' ref={ref}>
         <h2 className='text-3xl font-medium capitalize mb-8 text-center'>My Projects</h2>
 
         <div>
