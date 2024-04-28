@@ -56,9 +56,9 @@ export default function Intro() {
         animate={{opacity:1,y:0}} 
         >
           <span className=" font-bold">Hello, I'm Ayush.</span> I'm a{" "}
-          <span className="font-bold">full-stack developer</span> with{" "}
-          <span className="font-bold">8 years</span> of experience. I enjoy
-          building <span className="italic">sites & apps</span>. My focus is{" "}
+          <span className="font-bold">full-stack developer</span> currently{" "}
+           in college. I enjoy
+          building <span className="italic">sites &  apps</span>. My focus is{" "}
           <span className="underline">React (Next.js)</span>.
         </motion.h1>
 
@@ -78,15 +78,15 @@ export default function Intro() {
         >Contact me here <BsArrowRight className='group-hover:translate-x-2 transistion'/></Link>
 
         <a className='group bg-white text-black px-7 py-3 flex 
-        items-center rounded-full gap-2  outline-none hover:scale-110  cursor-pointer
+        items-center rounded-full gap-2  outline-none hover:scale-110  cursor-pointer dark:bg-white/10
         transition' href='/CV.pdf' download={true}>Download CV <HiDownload className='group-hover:translate-y-1 transition' /></a>
 
         <a className='bg-white text-gray-700 p-4 flex 
-        items-center rounded-full gap-2 hover:scale-110  cursor-pointer transition' 
+        items-center rounded-full gap-2 hover:scale-110  cursor-pointer transition dark:bg-white/10 dark:text-white/60' 
         href='https://www.linkedin.com/in/ayush-sagar-5b3443227/' target='_blank'><BsLinkedin/></a>
 
         <a className='bg-white text-gray-700 p-4 flex 
-        items-center rounded-full gap-2 hover:scale-110  cursor-pointer
+        items-center rounded-full gap-2 hover:scale-110  cursor-pointer dark:bg-white/10 dark:text-white/60
         transition' href='https://github.com/BadKarma99' target='_blank'><FaGithub/></a>
 
         </motion.div>

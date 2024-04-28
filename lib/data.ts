@@ -3,8 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import cab_sys from "@/public/cab_sys.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import arogyaImg from "@/public/arogya.png";
+import Text_SumariserImg from "@/public/Text_summariser.png";
 
 export const links = [
   {
@@ -35,28 +35,25 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Personal React Projects",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I developed my React skills through personal and academic projects, solidifying my understanding of component-based development, state management, UI/UX best practices, and building dynamic websites that integrate with APIs.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "June 23- October 23",
   },
   {
     title: "Front-End Developer",
-    location: "Orlando, FL",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Contributed to the development of a dynamic land rental website",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "November 23 - Feburary 24",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2024 - present",
   },
 ] as const;
 
@@ -65,22 +62,22 @@ export const projectsData = [
     title: "Cab_sys",
     description:
       "It is a project that i made during the university.It allows the users to get a cab in shortest and cheapest way.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["React", "Trpc", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: cab_sys,
   },
   {
-    title: "rmtDev",
+    title: "Arogya-eth",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Users can store their Medical Records with user Ownership. By Default the files are private if users want they can make it as public.",
+    tags: ["React", "TypeScript", "Next.js", "ChakraUI", "LightHouse Storage"],
+    imageUrl: arogyaImg,
   },
   {
     title: "Word Analytics",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A public web app for quick analytics on text. It shows the summarization of a given paragraph.",
+    tags: ["CSS", "HTML", "Python"],
+    imageUrl: Text_SumariserImg,
   },
 ] as const;
 
@@ -98,10 +95,8 @@ export const skillsData = [
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
 ] as const;

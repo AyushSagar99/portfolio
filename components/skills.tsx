@@ -2,7 +2,7 @@
 import { skillsData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
 import React from 'react';
-import {animate, delay, motion} from "framer-motion"
+import { motion} from "framer-motion"
 
 
 const fadeInAnimationVariants={
@@ -25,10 +25,10 @@ export default function Skills() {
     <section ref={ref} id='skills' className=' mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
         <h2 className='text-3xl font-medium capitalize mb-8 text-center'>My Skills</h2>
 
-        <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
+        <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800 dark:text-white/80'>
             { 
             skillsData.map((skill,index)=>(
-            <motion.li key={index} className='bg-white border-black-[0.1] rounded-xl px-5 py-3 ' 
+            <motion.li key={index} className='bg-white border-black-[0.1] rounded-xl px-5 py-3 dark:bg-white/10' 
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"

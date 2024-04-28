@@ -16,9 +16,8 @@ export default function About() {
     >
         <h2 className='text-3xl font-medium capitalize mb-8'>About me</h2>
         <p className='mb-3'>
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
+        Hi, I'm Ayush I am a college student pursuing B.Tech in {" "}
+        <span className="font-medium">Computer Science</span>, I learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
@@ -35,11 +34,9 @@ export default function About() {
 
         <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        video games, watching movies, and going Gym. I also enjoy{" "}
+        <span className="font-medium">learning new things</span>. I also
+         like playing basketball.
         </p>
     </motion.section>
   )
