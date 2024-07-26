@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import cab_sys from "@/public/cab_sys.png";
 import arogyaImg from "@/public/arogya.png";
 import Text_SumariserImg from "@/public/Text_summariser.png";
+import NexcentImg from "@/public/nexcent.png"
 
 export const links = [
   {
@@ -73,11 +74,11 @@ export const projectsData = [
     imageUrl: arogyaImg,
   },
   {
-    title: "Word Analytics",
+    title: "Nexcent",
     description:
-      "A public web app for quick analytics on text. It shows the summarization of a given paragraph.",
-    tags: ["CSS", "HTML", "Python"],
-    imageUrl: Text_SumariserImg,
+      "It is a web app which is rsponsive made using figma",
+    tags: ["Tailwind", "Typescript", "NextJs"],
+    imageUrl: NexcentImg,
   },
 ] as const;
 
