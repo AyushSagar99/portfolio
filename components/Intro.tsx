@@ -51,7 +51,7 @@ export default function Intro() {
             </div>
         </div>
         <motion.h1 
-        className=' mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl'
+        className=' mb-10 mt-4 px-4 text-2xl  font-medium !leading-[1.5] sm:text-4xl'
         initial={{opacity:0,y:100}}
         animate={{opacity:1,y:0}} 
         >
@@ -62,7 +62,7 @@ export default function Intro() {
           <span className="underline">React (Next.js)</span>.
         </motion.h1>
 
-        <motion.div className='flex items-center justify-center gap-2 sm:flex-wrap px-4
+        <motion.div className='flex-wrap sm:flex items-center justify-center gap-2  px-4
          text-lg font-medium'
          initial={{opacity:0,y:100}}
          animate={{opacity:1,y:0}} 
@@ -71,11 +71,11 @@ export default function Intro() {
          }}
          >
         <Link href="#contact"  className='group bg-gray-900 text-white px-7 py-3 flex 
-        items-center rounded-full gap-2 outline-none hover:scale-110 transition'onClick={()=>{
+        items-center rounded-full gap-2  outline-none hover:scale-110 transition'onClick={()=>{
           setActiveSection("Contact");
           setTimeOfLastClick(Date.now())
         }}
-        >Contact me here <BsArrowRight className='group-hover:translate-x-2 transistion'/></Link>
+        >Contact me here <BsArrowRight className='group-hover:translate-x-2  transistion'/></Link>
 
         <a className='group bg-white text-black px-7 py-3 flex 
         items-center rounded-full gap-2  outline-none hover:scale-110  cursor-pointer dark:bg-white/10
@@ -85,8 +85,8 @@ export default function Intro() {
         items-center rounded-full gap-2 hover:scale-110  cursor-pointer transition dark:bg-white/10 dark:text-white/60' 
         href='https://www.linkedin.com/in/ayush-sagar-5b3443227/' target='_blank'><BsLinkedin/></a>
 
-        <a className='bg-white text-gray-700 p-4 flex 
-        items-center rounded-full gap-2 hover:scale-110  cursor-pointer dark:bg-white/10 dark:text-white/60
+        <a className='bg-white text-gray-700 p-4  flex
+        items-center  rounded-full gap-2 hover:scale-110  cursor-pointer dark:bg-white/10 dark:text-white/60
         transition' href='https://github.com/BadKarma99' target='_blank'><FaGithub/></a>
 
         </motion.div>
