@@ -87,7 +87,7 @@ export default function Intro() {
 
         <a className='bg-white text-gray-700 p-4  flex
         items-center  rounded-full gap-2 hover:scale-110 mt-2 cursor-pointer dark:bg-white/10 dark:text-white/60
-        transition' href='https://github.com/BadKarma99' target='_blank'><FaGithub/></a>
+        transition' href='https://github.com/AyushSagar99' target='_blank'><FaGithub/></a>
 
         </motion.div>
     </section>
