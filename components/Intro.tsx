@@ -62,7 +62,7 @@ export default function Intro() {
           <span className="underline">React (Next.js)</span>.
         </motion.h1>
 
-        <motion.div className='flex items-center justify-center gap-2 sm:flex-row px-4
+        <motion.div className='flex items-center justify-center gap-2 sm:flex-wrap px-4
          text-lg font-medium'
          initial={{opacity:0,y:100}}
          animate={{opacity:1,y:0}} 

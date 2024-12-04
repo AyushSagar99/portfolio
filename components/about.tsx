@@ -15,7 +15,7 @@ export default function About() {
     ref={ref}
     >
         <h2 className='text-3xl font-medium capitalize mb-8'>About me</h2>
-        <p className='mb-3'>
+        <p className='mb-3 '>
         Hi, I'm Ayush I am a college student pursuing B.Tech in {" "}
         <span className="font-medium">Computer Science</span>, I learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
