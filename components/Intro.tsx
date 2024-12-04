@@ -70,23 +70,23 @@ export default function Intro() {
           delay:0.1,
          }}
          >
-        <Link href="#contact"  className='group bg-gray-900 text-white px-7 py-3 flex 
+        <Link href="#contact"  className='group bg-gray-900 text-white m-2 px-7 py-3 flex 
         items-center rounded-full gap-2  outline-none hover:scale-110 transition'onClick={()=>{
           setActiveSection("Contact");
           setTimeOfLastClick(Date.now())
         }}
-        >Contact me here <BsArrowRight className='group-hover:translate-x-2  transistion'/></Link>
+        >Contact me here <BsArrowRight className='group-hover:translate-x-2 mt-2 transistion'/></Link>
 
         <a className='group bg-white text-black px-7 py-3 flex 
         items-center rounded-full gap-2  outline-none hover:scale-110  cursor-pointer dark:bg-white/10
         transition' href='/CV.pdf' download={true}>Download CV <HiDownload className='group-hover:translate-y-1 transition' /></a>
 
         <a className='bg-white text-gray-700 p-4 flex 
-        items-center rounded-full gap-2 hover:scale-110  cursor-pointer transition dark:bg-white/10 dark:text-white/60' 
+        items-center rounded-full gap-2 hover:scale-110 mt-2 cursor-pointer transition dark:bg-white/10 dark:text-white/60' 
         href='https://www.linkedin.com/in/ayush-sagar-5b3443227/' target='_blank'><BsLinkedin/></a>
 
         <a className='bg-white text-gray-700 p-4  flex
-        items-center  rounded-full gap-2 hover:scale-110  cursor-pointer dark:bg-white/10 dark:text-white/60
+        items-center  rounded-full gap-2 hover:scale-110 mt-2 cursor-pointer dark:bg-white/10 dark:text-white/60
         transition' href='https://github.com/BadKarma99' target='_blank'><FaGithub/></a>
 
         </motion.div>
