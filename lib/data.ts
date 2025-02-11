@@ -43,18 +43,18 @@ export const experiencesData = [
     date: "June 23- October 23",
   },
   {
-    title: "Front-End Developer",
+    title: "Full Stack intern",
     description:
-      "Contributed to the development of a dynamic land rental website",
+      "worked in a AI startup building a UI for chatbot in react, tailwind and storybook also make tests using vitest",
     icon: React.createElement(CgWorkAlt),
-    date: "November 23 - Feburary 24",
+    date: "August 24 - December 24",
   },
   {
     title: "Full-Stack Developer",
     description:
-      "I'm now a full-stack developer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Currently working as a Software Developer, specializing in building SaaS platforms and web applications using Next.js, Tailwind CSS, and Prisma. My role involves developing scalable, high-performance applications with a focus on clean architecture, responsive design, and efficient data management. I work across both front-end and back-end, ensuring seamless integration between the UI and databases, while delivering user-friendly, feature-rich products tailored to client needs.",
     icon: React.createElement(FaReact),
-    date: "2024 - present",
+    date: "January 25 - present",
   },
 ] as const;
 
