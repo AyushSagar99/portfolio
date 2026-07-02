@@ -68,24 +68,27 @@ export default function Intro() {
         </li>
       </ul>
 
-      <div className="mt-6 flex flex-wrap items-center gap-2">
+      <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:items-center">
+        <div className="flex items-center gap-2">
         <Link
           href="#contact"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
-          className="rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
+          className="flex-1 rounded-md bg-zinc-900 px-4 py-2 text-center text-sm font-medium text-white transition hover:bg-zinc-700 sm:flex-none dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
         >
           Contact me
         </Link>
         <a
           href="/CV.pdf"
           download
-          className="flex items-center gap-1.5 rounded-md border border-zinc-200 px-4 py-2 text-sm font-medium transition hover:bg-zinc-100 dark:border-zinc-800 dark:hover:bg-zinc-900"
+          className="flex flex-1 items-center justify-center gap-1.5 rounded-md border border-zinc-200 px-4 py-2 text-sm font-medium transition hover:bg-zinc-100 sm:flex-none dark:border-zinc-800 dark:hover:bg-zinc-900"
         >
           Download CV <HiDownload />
         </a>
+        </div>
+        <div className="flex items-center gap-2">
         <a
           href={profile.linkedin}
           target="_blank"
@@ -113,6 +116,7 @@ export default function Intro() {
         >
           <BsTwitterX />
         </a>
+        </div>
       </div>
 
       <GithubGraph />
