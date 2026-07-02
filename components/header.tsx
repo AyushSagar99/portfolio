@@ -18,7 +18,7 @@ export default function Header() {
         >
           Ayush Sagar
         </Link>
-        <nav className="flex items-center gap-0.5 overflow-x-auto sm:gap-1">
+        <nav className="no-scrollbar flex items-center gap-0.5 overflow-x-auto sm:gap-1">
           {links.map((link) => (
             <Link
               key={link.hash}
