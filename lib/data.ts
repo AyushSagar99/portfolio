@@ -25,6 +25,10 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Freelance",
+    hash: "#freelance",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -99,6 +103,27 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Next.js", "ChakraUI", "LightHouse Storage"],
     imageUrl: arogyaImg,
     link: "https://arogya-eth-for-all.vercel.app",
+  },
+] as const;
+
+export const freelanceData = [
+  {
+    title: "Kashi Archan Foundation",
+    description:
+      "Maintain kashiarchan.com and its companion mobile app — a faith-tech platform generating over $2M in revenue.",
+    tags: ["Web", "Mobile App"],
+  },
+  {
+    title: "Coder Army",
+    description:
+      "Built a LeetCode-style coding practice platform for an ed-tech client.",
+    tags: ["Vite", "React", "TypeScript", "Tailwind", "AWS"],
+  },
+  {
+    title: "Gamerge",
+    description:
+      "Designed and shipped a marketing landing page for a gaming client.",
+    tags: ["Next.js", "TypeScript", "shadcn/ui"],
   },
 ] as const;
 

@@ -2,6 +2,7 @@ import Intro from "@/components/Intro";
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
+import Freelance from "@/components/freelance";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 
@@ -25,6 +26,8 @@ export default function Home() {
       <Skills />
       <Stripes />
       <Experience />
+      <Stripes />
+      <Freelance />
       <Stripes />
       <Contact />
     </main>
