@@ -2,10 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import cab_sys from "@/public/cab_sys.png";
 import arogyaImg from "@/public/arogya.png";
-import Text_SumariserImg from "@/public/Text_summariser.png";
-import NexcentImg from "@/public/nexcent.png"
+import liveiconImg from "@/public/liveicon.png";
+import redditverseImg from "@/public/redditverse.png";
+import urlshortnerImg from "@/public/urlshortner.png";
 
 export const links = [
   {
@@ -36,49 +36,67 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Personal React Projects",
+    title: "B.Tech Computer Science, Bennett University",
     description:
-      "I developed my React skills through personal and academic projects, solidifying my understanding of component-based development, state management, UI/UX best practices, and building dynamic websites that integrate with APIs.",
+      "Graduated with an 8 CGPA, focusing on full-stack development. Built and shipped several projects along the way, including a blockchain-based health records vault.",
     icon: React.createElement(LuGraduationCap),
-    date: "June 23- October 23",
+    date: "September 2021 - March 2025",
   },
   {
-    title: "Full Stack intern",
+    title: "Full Stack Developer Intern, Business of Insights",
     description:
-      "worked in a AI startup building a UI for chatbot in react, tailwind and storybook also make tests using vitest",
+      "Built and documented reusable UI components with Storybook, improving design consistency and development efficiency. Integrated REST APIs to connect frontend interfaces with backend services and tested thoroughly for a reliable user experience.",
     icon: React.createElement(CgWorkAlt),
-    date: "August 24 - December 24",
+    date: "August 2024 - January 2025",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Backend Developer, Bizom",
     description:
-      "Currently working as a Software Developer, specializing in building SaaS platforms and web applications using Next.js, Tailwind CSS, and Prisma. My role involves developing scalable, high-performance applications with a focus on clean architecture, responsive design, and efficient data management. I work across both front-end and back-end, ensuring seamless integration between the UI and databases, while delivering user-friendly, feature-rich products tailored to client needs.",
+      "Designed, developed, and maintained PHP APIs powering web and mobile applications. Managed databases, optimized backend performance, and collaborated with cross-functional teams to ship scalable, secure, high-performance APIs.",
+    icon: React.createElement(CgWorkAlt),
+    date: "January 2025 - December 2025",
+  },
+  {
+    title: "Full Stack Developer, Infinity Box",
+    description:
+      "Building scalable full-stack applications with React, Next.js, and TypeScript, focusing on responsive dashboards. Developing RESTful APIs with Node.js, designing optimized SQL databases, and deploying to AWS following security and scalability best practices.",
     icon: React.createElement(FaReact),
-    date: "January 25 - present",
+    date: "January 2026 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "Cab_sys",
+    title: "LiveIcon",
     description:
-      "It is a project that i made during the university.It allows the users to get a cab in shortest and cheapest way.",
-    tags: ["React", "Trpc", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: cab_sys,
+      "Open-source animated icon library with reusable, customizable icon components. Smooth motion-based interactions and a copy-to-use workflow for a great developer experience.",
+    tags: ["Next.js", "Framer Motion", "SVG", "TypeScript", "Open Source"],
+    imageUrl: liveiconImg,
+    link: "https://liveicon.vercel.app/",
   },
   {
-    title: "Arogya-eth",
+    title: "RedditVerse",
     description:
-      "Users can store their Medical Records with user Ownership. By Default the files are private if users want they can make it as public.",
+      "Full-stack app that lets users securely share their Reddit profiles with granular privacy controls, focusing on secure data handling and clean, responsive UI.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+    imageUrl: redditverseImg,
+    link: "https://profile-v-tau.vercel.app/",
+  },
+  {
+    title: "URL Shortener",
+    description:
+      "Fast, user-friendly app that converts long URLs into short, shareable links with real-time link generation and clipboard copy, wrapped in a sleek responsive UI.",
+    tags: ["Next.js", "Tailwind", "Framer Motion"],
+    imageUrl: urlshortnerImg,
+    link: "https://url-short-q4tx.onrender.com",
+  },
+  {
+    title: "Arogya Health Vault",
+    description:
+      "Users can store their medical records with full ownership. Files are private by default and can be made public whenever the user chooses.",
     tags: ["React", "TypeScript", "Next.js", "ChakraUI", "LightHouse Storage"],
     imageUrl: arogyaImg,
-  },
-  {
-    title: "Nexcent",
-    description:
-      "It is a web app which is rsponsive made using figma",
-    tags: ["Tailwind", "Typescript", "NextJs"],
-    imageUrl: NexcentImg,
+    link: "https://arogya-eth-for-all.vercel.app",
   },
 ] as const;
 
@@ -89,15 +107,18 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Express",
+  "shadcn/ui",
+  "Node.js",
+  "PHP",
+  "REST APIs",
+  "JWT Authentication",
   "PostgreSQL",
-  "Python",
+  "MongoDB",
+  "SQL",
+  "Prisma",
+  "Git",
+  "Storybook",
   "Framer Motion",
+  "AWS",
 ] as const;

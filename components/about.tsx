@@ -16,20 +16,17 @@ export default function About() {
     >
         <h2 className='text-3xl font-medium capitalize mb-8'>About me</h2>
         <p className='mb-3 '>
-        Hi, I'm Ayush I am a college student pursuing B.Tech in {" "}
-        <span className="font-medium">Computer Science</span>, I learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        Hi, I'm Ayush, a <span className="font-medium">full-stack engineer</span>{" "}
+        shipping production{" "}
+        <span className="font-medium">React, Next.js, and TypeScript</span> apps
+        at startups, plus live public projects — including{" "}
+        <span className="font-medium">LiveIcon</span>, an open-source animated
+        icon library. I'm equally at home in the UI layer (Framer Motion,
+        Tailwind, shadcn) and the API + database layer (Node.js, REST,
+        PostgreSQL, Prisma). <span className="italic">My favorite part of
+        programming</span> is the problem-solving aspect — I{" "}
+        <span className="underline">love</span> owning features end-to-end, from
+        the first wireframe to the deployed product.
         </p>
 
         <p>
