@@ -110,8 +110,9 @@ export const freelanceData = [
   {
     title: "Kashi Archan Foundation",
     description:
-      "Maintain kashiarchan.com and its companion mobile app — a faith-tech platform generating over $2M in revenue.",
+      "I own the entire tech stack — web and mobile app — for a faith-tech organization doing $2M+ in annual sales, with a focus on scalability, security, and turning ideas into shipped products.",
     tags: ["Web", "Mobile App"],
+    link: "https://kashiarchan.com/",
   },
   {
     title: "Coder Army",

@@ -18,7 +18,20 @@ export default function Freelance() {
             key={item.title}
             className="border-b border-zinc-200 py-5 first:pt-0 last:border-none last:pb-0 dark:border-zinc-800"
           >
-            <h3 className="text-sm font-medium">{item.title}</h3>
+            <h3 className="text-sm font-medium">
+              {"link" in item ? (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  {item.title} ↗
+                </a>
+              ) : (
+                item.title
+              )}
+            </h3>
             <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
               {item.description}
             </p>
