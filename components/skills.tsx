@@ -1,45 +1,35 @@
 "use client";
-import { skillsData } from '@/lib/data';
-import { useSectionInView } from '@/lib/hooks';
-import React from 'react';
-import { motion} from "framer-motion"
-
-
-const fadeInAnimationVariants={
-    initial:{
-        opacity:0,
-        y:100
-    },
-    animate:(index:number)=>({
-        opacity:1,
-        y:0,
-        transition:{
-            delay:0.05 * index,
-        },
-    }),
-};
+import { skillGroups } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
+import React from "react";
 
 export default function Skills() {
-    const {ref} =useSectionInView("Skills",0.4)
+  const { ref } = useSectionInView("Skills", 0.4);
   return (
-    <section ref={ref} id='skills' className=' mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
-        <h2 className='text-3xl font-medium capitalize mb-8 text-center'>My Skills</h2>
-
-        <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800 dark:text-white/80'>
-            { 
-            skillsData.map((skill,index)=>(
-            <motion.li key={index} className='bg-white border-black-[0.1] rounded-xl px-5 py-3 dark:bg-white/10' 
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{once:true}}
-            custom={index}
-            >
-                {skill}
-            </motion.li>
-            ))
-        }
-        </ul>
+    <section ref={ref} id="skills" className="scroll-mt-16 px-4 py-12 sm:px-6">
+      <h2 className="mb-6 text-lg font-semibold tracking-tight">Stack</h2>
+      <dl className="flex flex-col gap-4">
+        {skillGroups.map((group) => (
+          <div
+            key={group.category}
+            className="flex flex-col gap-2 sm:flex-row sm:items-baseline"
+          >
+            <dt className="w-28 shrink-0 text-sm font-medium text-zinc-500">
+              {group.category}
+            </dt>
+            <dd className="flex flex-wrap gap-1.5">
+              {group.skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-md border border-zinc-200 px-2 py-0.5 text-xs text-zinc-700 dark:border-zinc-800 dark:text-zinc-300"
+                >
+                  {skill}
+                </span>
+              ))}
+            </dd>
+          </div>
+        ))}
+      </dl>
     </section>
-  )
+  );
 }

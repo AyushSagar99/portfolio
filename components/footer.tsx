@@ -1,14 +1,12 @@
-import React from 'react'
+import React from "react";
 
 export default function Footer() {
   return (
-    <footer className='mb-10 px-4 text-center text-gray-500'>
-      <small className="mb-2 block text-xs">&copy; 2030 Ayush. All rights reserved </small>
-      <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
-        React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, Vercel hosting.
+    <footer className="mt-auto border-t border-zinc-200 px-4 py-6 text-xs text-zinc-500 sm:px-6 dark:border-zinc-800">
+      <p>
+        &copy; 2026 Ayush Sagar. Built with Next.js, TypeScript, Tailwind CSS,
+        and Resend.
       </p>
     </footer>
-  )
+  );
 }

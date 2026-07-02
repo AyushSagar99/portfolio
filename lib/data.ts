@@ -1,7 +1,3 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import arogyaImg from "@/public/arogya.png";
 import liveiconImg from "@/public/liveicon.png";
 import redditverseImg from "@/public/redditverse.png";
@@ -34,33 +30,39 @@ export const links = [
   },
 ] as const;
 
+export const profile = {
+  name: "Ayush Sagar",
+  role: "Full Stack Developer",
+  location: "Bengaluru, India",
+  email: "saggar.ayush@gmail.com",
+  website: "https://ayushsagar.vercel.app",
+  github: "https://github.com/AyushSagar99",
+  linkedin: "https://www.linkedin.com/in/ayush-sagar-5b3443227/",
+} as const;
+
 export const experiencesData = [
   {
     title: "B.Tech Computer Science, Bennett University",
     description:
       "Graduated with an 8 CGPA, focusing on full-stack development. Built and shipped several projects along the way, including a blockchain-based health records vault.",
-    icon: React.createElement(LuGraduationCap),
     date: "September 2021 - March 2025",
   },
   {
     title: "Full Stack Developer Intern, Business of Insights",
     description:
       "Built and documented reusable UI components with Storybook, improving design consistency and development efficiency. Integrated REST APIs to connect frontend interfaces with backend services and tested thoroughly for a reliable user experience.",
-    icon: React.createElement(CgWorkAlt),
     date: "August 2024 - January 2025",
   },
   {
     title: "Backend Developer, Bizom",
     description:
       "Designed, developed, and maintained PHP APIs powering web and mobile applications. Managed databases, optimized backend performance, and collaborated with cross-functional teams to ship scalable, secure, high-performance APIs.",
-    icon: React.createElement(CgWorkAlt),
     date: "January 2025 - December 2025",
   },
   {
     title: "Full Stack Developer, Infinity Box",
     description:
       "Building scalable full-stack applications with React, Next.js, and TypeScript, focusing on responsive dashboards. Developing RESTful APIs with Node.js, designing optimized SQL databases, and deploying to AWS following security and scalability best practices.",
-    icon: React.createElement(FaReact),
     date: "January 2026 - present",
   },
 ] as const;
@@ -100,25 +102,31 @@ export const projectsData = [
   },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Tailwind",
-  "shadcn/ui",
-  "Node.js",
-  "PHP",
-  "REST APIs",
-  "JWT Authentication",
-  "PostgreSQL",
-  "MongoDB",
-  "SQL",
-  "Prisma",
-  "Git",
-  "Storybook",
-  "Framer Motion",
-  "AWS",
+export const skillGroups = [
+  {
+    category: "Frontend",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind",
+      "shadcn/ui",
+      "Framer Motion",
+    ],
+  },
+  {
+    category: "Backend",
+    skills: ["Node.js", "PHP", "REST APIs", "JWT Authentication"],
+  },
+  {
+    category: "Databases",
+    skills: ["PostgreSQL", "MongoDB", "SQL", "Prisma"],
+  },
+  {
+    category: "Tools",
+    skills: ["Git", "Storybook", "AWS"],
+  },
 ] as const;
