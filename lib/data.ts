@@ -42,6 +42,7 @@ export const profile = {
   website: "https://ayushsagar.vercel.app",
   github: "https://github.com/AyushSagar99",
   linkedin: "https://www.linkedin.com/in/ayush-sagar-5b3443227/",
+  x: "https://x.com/0xayushS",
 } as const;
 
 export const experiencesData = [

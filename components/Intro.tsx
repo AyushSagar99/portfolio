@@ -4,7 +4,7 @@ import React from "react";
 import passport from "@/public/passport.jpeg";
 import Link from "next/link";
 import { profile } from "@/lib/data";
-import { BsLinkedin } from "react-icons/bs";
+import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import {
   HiDownload,
@@ -103,6 +103,15 @@ export default function Intro() {
           className="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 text-zinc-600 transition hover:bg-zinc-100 dark:border-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-900"
         >
           <FaGithub />
+        </a>
+        <a
+          href={profile.x}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+          className="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 text-zinc-600 transition hover:bg-zinc-100 dark:border-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-900"
+        >
+          <BsTwitterX />
         </a>
       </div>
 
