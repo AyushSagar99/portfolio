@@ -14,6 +14,7 @@ import {
 } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import GithubGraph from "./github-graph";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.6);
@@ -104,6 +105,8 @@ export default function Intro() {
           <FaGithub />
         </a>
       </div>
+
+      <GithubGraph />
     </section>
   );
 }
