@@ -10,6 +10,14 @@ html.dark {
   --stripe-color: #27272a;
 }
 
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .section-stripes {
   background-image: repeating-linear-gradient(
     45deg,

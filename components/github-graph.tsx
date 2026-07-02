@@ -11,7 +11,7 @@ const GitHubCalendar = dynamic(
 export default function GithubGraph() {
   const { theme } = useTheme();
   return (
-    <div className="mt-8 min-h-[8rem] overflow-x-auto text-zinc-600 dark:text-zinc-400">
+    <div className="no-scrollbar mt-8 min-h-[8rem] overflow-x-auto text-zinc-600 dark:text-zinc-400">
       <GitHubCalendar
         username="AyushSagar99"
         colorScheme={theme}
