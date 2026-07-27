@@ -20,6 +20,18 @@ html.dark {
   display: none;
 }
 
+.react-activity-calendar rect {
+  rx: 3;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.react-activity-calendar rect:hover {
+  transform: scale(1.4) translateY(-1.5px);
+  filter: brightness(1.3) drop-shadow(0 2px 3px rgb(0 0 0 / 0.45));
+}
+
 .section-stripes {
   background-image: repeating-linear-gradient(
     45deg,
