@@ -15,6 +15,7 @@ import {
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import GithubGraph from "./github-graph";
+import SocialLink from "./social-link";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.6);
@@ -89,33 +90,19 @@ export default function Intro() {
         </a>
         </div>
         <div className="flex items-center gap-2">
-        <a
+        <SocialLink
           href={profile.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 text-zinc-600 transition hover:bg-zinc-100 dark:border-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-900"
+          label="LinkedIn"
+          handle="in/ayush-sagar"
         >
           <BsLinkedin />
-        </a>
-        <a
-          href={profile.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-          className="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 text-zinc-600 transition hover:bg-zinc-100 dark:border-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-900"
-        >
+        </SocialLink>
+        <SocialLink href={profile.github} label="GitHub" handle="@AyushSagar99">
           <FaGithub />
-        </a>
-        <a
-          href={profile.x}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="X (Twitter)"
-          className="flex h-9 w-9 items-center justify-center rounded-md border border-zinc-200 text-zinc-600 transition hover:bg-zinc-100 dark:border-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-900"
-        >
+        </SocialLink>
+        <SocialLink href={profile.x} label="X" handle="@0xayushS">
           <BsTwitterX />
-        </a>
+        </SocialLink>
         </div>
       </div>
 
