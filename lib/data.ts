@@ -1,4 +1,4 @@
-import arogyaImg from "@/public/arogya.png";
+import atticImg from "@/public/attic.png";
 import liveiconImg from "@/public/liveicon.png";
 import redditverseImg from "@/public/redditverse.png";
 import urlshortnerImg from "@/public/urlshortner.png";
@@ -74,6 +74,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Attic",
+    description:
+      "Personal archive for links, articles, videos, and notes that answers natural-language questions about everything you've saved. Content is archived so it stays searchable even when the original link dies, and answers cite the saved item they came from.",
+    tags: ["Next.js", "TypeScript", "Claude API", "Chrome Extension"],
+    imageUrl: atticImg,
+    link: "https://attic-beige.vercel.app/",
+  },
+  {
     title: "LiveIcon",
     description:
       "Open-source animated icon library with reusable, customizable icon components. Smooth motion-based interactions and a copy-to-use workflow for a great developer experience.",
@@ -96,14 +104,6 @@ export const projectsData = [
     tags: ["Next.js", "Tailwind", "Framer Motion"],
     imageUrl: urlshortnerImg,
     link: "https://url-short-q4tx.onrender.com",
-  },
-  {
-    title: "Arogya Health Vault",
-    description:
-      "Users can store their medical records with full ownership. Files are private by default and can be made public whenever the user chooses.",
-    tags: ["React", "TypeScript", "Next.js", "ChakraUI", "LightHouse Storage"],
-    imageUrl: arogyaImg,
-    link: "https://arogya-eth-for-all.vercel.app",
   },
 ] as const;
 
